@@ -18,5 +18,16 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Monolith\System\Logging\ErrorLog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Monolith\System\Exceptions\InitException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Monolith\System\Logging\ErrorLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
