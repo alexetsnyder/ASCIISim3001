@@ -15,10 +15,12 @@ int main(int argv, char** argc)
 	}
 
 	sf::Sprite sprite{ texture };
+	sf::FloatRect bounds{ sprite.getGlobalBounds() };
+	
+	sprite.setPosition({ 400.0f - bounds.size.x / 2, 300.0f - bounds.size.y / 2 });
 
 	sf::RenderWindow window{ sf::VideoMode{ { 800, 600 } }, "SFML Hello World!"};
-	/*sf::CircleShape circle{ 100.0f };
-	circle.setFillColor(sf::Color::Green);*/
+
 
 	while (window.isOpen())
 	{
