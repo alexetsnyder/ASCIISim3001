@@ -1,3 +1,5 @@
+#include "Monolith/Rendering/Glyphs.h"
+
 #include <SFML/Graphics.hpp>
 
 #include <cstdlib>
@@ -16,9 +18,7 @@ int main(int argv, char** argc)
 
 	sf::Sprite glyph_sprite{ glyph_texture };
 
-	sf::IntRect textureRect{ { 18, 0 }, { 18, 18} };
-
-	glyph_sprite.setTextureRect(textureRect);
+	glyph_sprite.setTextureRect(Glyphs::DWARF_FACE1);
 
 	sf::RenderTexture render_texture{ { 288, 288 } };
 

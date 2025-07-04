@@ -138,6 +138,7 @@
     <ClCompile Include="Monolith\System\Logging\ErrorLog.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Monolith\Rendering\Glyphs.h" />
     <ClInclude Include="Monolith\System\Exceptions\InitException.h" />
     <ClInclude Include="Monolith\System\Logging\ErrorLog.h" />
   </ItemGroup>

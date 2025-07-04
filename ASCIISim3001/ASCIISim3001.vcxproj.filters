@@ -29,5 +29,8 @@
     <ClInclude Include="Monolith\System\Logging\ErrorLog.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Monolith\Rendering\Glyphs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
