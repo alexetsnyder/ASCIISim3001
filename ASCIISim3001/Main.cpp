@@ -16,10 +16,21 @@ int main(int argv, char** argc)
 
 	sf::Sprite glyph_sprite{ glyph_texture };
 
+	sf::IntRect textureRect{ { 18, 0 }, { 18, 18} };
+
+	glyph_sprite.setTextureRect(textureRect);
+
 	sf::RenderTexture render_texture{ { 288, 288 } };
 
 	render_texture.clear();
-	render_texture.draw(glyph_sprite);
+	for (int i = 0; i < 288; i += 18)
+	{
+		for (int j = 0; j < 288; j += 18)
+		{
+			glyph_sprite.setPosition(sf::Vector2f{ (float)i, (float)j });
+			render_texture.draw(glyph_sprite);
+		}
+	}
 	render_texture.display();
 
 	sf::Texture display_texture{ render_texture.getTexture() };
