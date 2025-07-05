@@ -82,8 +82,8 @@ void createGrid(int width, int height, sf::VertexArray& lines)
 
 void createWorld(int width, int height, sf::Sprite& glyph_set, sf::RenderTexture& world)
 {
-	glyph_set.setTextureRect(Glyphs::TILDE);
-	glyph_set.setColor({ 0, 0, 255 });
+	glyph_set.setTextureRect(Glyphs::SMALL_MOUNTAIN);
+	glyph_set.setColor({ 128, 128, 128 });
 
 	world.clear({ 0, 0, 0, 0 });
 	for (int i = 0; i < height; i += 18)
